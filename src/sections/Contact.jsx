@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { PRIMARY_COLOR, SECONDARY_COLOR, TERTIARY_COLOR } from "../components/common";
+import {
+  PRIMARY_COLOR,
+  SECONDARY_COLOR,
+  TERTIARY_COLOR,
+} from "../components/common";
 import Mail from "../components/icons/Mail";
 
 const Container = styled.div`
@@ -64,7 +68,7 @@ export const Wrapper = styled.a`
     svg {
       stroke: ${PRIMARY_COLOR};
     }
-    
+
     &:before {
       transform: scaleY(1);
       opacity: 1;
@@ -77,18 +81,16 @@ export const Wrapper = styled.a`
   }
 `;
 
-const Contact = () => {
-  return (
-    <Container id='contact'>
-      <H2>CONTACT</H2>
-      <Wrapper href="mailto:jc.992@hotmail.com">
-        <div style={{ display: "flex", alignItems: "center", gap: ".5em" }}>
-          <span>email me</span>{" "}
-          <Mail size="16" color={SECONDARY_COLOR} style={{ strokeWidth: "3" }} />
-        </div>
-      </Wrapper>
-    </Container>
-  );
-};
+const Contact = () => (
+  <Container id="contact">
+    <H2>CONTACT</H2>
+    <Wrapper href="mailto:jc.992@hotmail.com">
+      <div style={{ display: "flex", alignItems: "center", gap: ".5em" }}>
+        <span>email me</span>{" "}
+        <Mail size="16" color={SECONDARY_COLOR} style={{ strokeWidth: "3" }} />
+      </div>
+    </Wrapper>
+  </Container>
+);
 
 export default Contact;

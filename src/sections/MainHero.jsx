@@ -4,13 +4,13 @@ import GitHub from "../components/icons/Github";
 import Mail from "../components/icons/Mail";
 import LinkedIn from "../components/icons/LinkedIn";
 import { A, SECONDARY_COLOR, TERTIARY_COLOR } from "../components/common";
-import avatar from '../assets/avatar.svg';
+import avatar from "../assets/avatar.svg";
 
 const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: .5em;
+  margin-top: 0.5em;
 `;
 
 const Span = styled.span`
@@ -56,43 +56,53 @@ const Img = styled.img`
   border-radius: 100px;
 `;
 
-const MainHero = () => {
-  return (
-    <Container>
-    <Img height='250px' src={avatar} />
-      <H2>
-        Full Stack <Span>Web3</Span> Engineer.
-      </H2>
-      <P>
-        Music, computers, and adventure are a constant part of my life. I've
-        been a curious cat since my childhood, putting pieces together and
-        figuring out how things work, from real-life situations to cybernetic
-        environments. My passion for music got me into DJing, and my passion for
-        computers got me into programming. Backed up by my analytical skills and
-        intuition, I'm going to mix your code, perfectly sync it to your
-        desires, and get fun(key) with you!
-      </P>
-      <ContactWrapper>
-        <Ul>
-          <Li>
-            <A href="https://github.com/jc992/" target='_blank'>
-              <GitHub size="16" color={SECONDARY_COLOR} style={{ strokeWidth: "3" }} />
-            </A>
-          </Li>
-          <Li>
-            <A href="mailto:jc.992@hotmail.com" target='_blank'>
-              <Mail size="16" color={SECONDARY_COLOR} style={{ strokeWidth: "3" }} />
-            </A>
-          </Li>
-          <Li>
-            <A href="https://www.linkedin.com/in/jc-tavares/" target='_blank'>
-              <LinkedIn size="16" color={SECONDARY_COLOR} style={{ strokeWidth: "3" }} />
-            </A>
-          </Li>
-        </Ul>
-      </ContactWrapper>
-    </Container>
-  );
-};
+const MainHero = () => (
+  <Container>
+    <Img height="250px" src={avatar} />
+    <H2>
+      Full Stack <Span>Web3</Span> Engineer.
+    </H2>
+    <P>
+      Music, computers, and adventure are a constant part of my life. I've been
+      a curious cat since my childhood, putting pieces together and figuring out
+      how things work, from real-life situations to cybernetic environments. My
+      passion for music got me into DJing, and my passion for computers got me
+      into programming. Backed up by my analytical skills and intuition, I'm
+      going to mix your code, perfectly sync it to your desires, and get
+      fun(key) with you!
+    </P>
+    <ContactWrapper>
+      <Ul>
+        <Li>
+          <A href="https://github.com/jc992/" target="_blank">
+            <GitHub
+              size="16"
+              color={SECONDARY_COLOR}
+              style={{ strokeWidth: "3" }}
+            />
+          </A>
+        </Li>
+        <Li>
+          <A href="mailto:jc.992@hotmail.com" target="_blank">
+            <Mail
+              size="16"
+              color={SECONDARY_COLOR}
+              style={{ strokeWidth: "3" }}
+            />
+          </A>
+        </Li>
+        <Li>
+          <A href="https://www.linkedin.com/in/jc-tavares/" target="_blank">
+            <LinkedIn
+              size="16"
+              color={SECONDARY_COLOR}
+              style={{ strokeWidth: "3" }}
+            />
+          </A>
+        </Li>
+      </Ul>
+    </ContactWrapper>
+  </Container>
+);
 
 export default MainHero;
