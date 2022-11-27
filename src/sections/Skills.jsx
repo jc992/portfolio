@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { BOX_SHADOW_COLOR, TERTIARY_COLOR } from "../components/common";
 
 const H2 = styled.h2`
   text-align: center;
@@ -7,7 +8,7 @@ const H2 = styled.h2`
   text-transform: uppercase;
   font-size: 2rem;
   line-height: 1.2;
-  color: #444;
+  color: ${TERTIARY_COLOR};
 `;
 
 const Ul = styled.ul`
@@ -24,7 +25,7 @@ const Ul = styled.ul`
 const Li = styled.li`
   text-transform: none;
   background-color: var(--clr-bg-alt);
-  box-shadow: rgba(61, 61, 59, 0.4) 0px 3px 3px 0px;
+  box-shadow: ${BOX_SHADOW_COLOR} 0px 3px 3px 0px;
   border: 0;
   display: block;
   cursor: pointer;

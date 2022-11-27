@@ -7,6 +7,7 @@ import ohne from "../assets/ohne.svg";
 import olympus from "../assets/olympus.svg";
 import data_talks from "../assets/data_talks.svg";
 import spice_landing_page from "../assets/spice_landing_page.svg";
+import { TERTIARY_COLOR } from "../components/common";
 
 const Grid = styled.div`
   max-width: 1100px;
@@ -22,7 +23,7 @@ const H2 = styled.h2`
   text-transform: uppercase;
   font-size: 2rem;
   line-height: 1.2;
-  color: #444;
+  color: ${TERTIARY_COLOR};
 `;
 
 const Projects = () => {

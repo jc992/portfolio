@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { A } from "./common";
+import { A, BOX_SHADOW_COLOR, SECONDARY_COLOR } from "./common";
 import ExternalLink from "./icons/ExternalLink";
 import GitHub from "./icons/Github";
 
@@ -8,7 +8,7 @@ const Container = styled.div`
   padding: 2em;
   margin: 0 auto;
   text-align: center;
-  box-shadow: rgba(61, 61, 59, 0.4) 0px 7px 29px 0px;
+  box-shadow: ${BOX_SHADOW_COLOR} 0px 7px 29px 0px;
   transition: -webkit-transform 0.2s linear;
   transition: transform 0.2s linear;
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
@@ -24,11 +24,11 @@ const Container = styled.div`
 const H3 = styled.h3`
   font-size: 1.5rem;
   line-height: 1.2;
-  color: #ddd;
+  color: ${SECONDARY_COLOR};
 `;
 const P = styled.p`
   margin-top: 1em;
-  color: #ddd;
+  color: ${SECONDARY_COLOR};
 `;
 const Img = styled.img`
   max-width: 100%;
@@ -48,7 +48,7 @@ const Li = styled.li`
   margin: 0.5em;
   font-weight: 500;
   font-size: 0.8rem;
-  color: #ddd;
+  color: ${SECONDARY_COLOR};
 `;
 
 const IconContainer = styled.div`
@@ -74,7 +74,7 @@ const Card = ({ title, paragraph, image, stack, link, github }) => {
           {github ? (
             <Li>
               <A href={github} target="_blank">
-                <GitHub size="16" color="#ddd" style={{ strokeWidth: "3" }} />
+                <GitHub size="16" color={SECONDARY_COLOR} style={{ strokeWidth: "3" }} />
               </A>
             </Li>
           ) : null}
@@ -83,7 +83,7 @@ const Card = ({ title, paragraph, image, stack, link, github }) => {
               <A href={link} target="_blank">
                 <ExternalLink
                   size="16"
-                  color="#ddd"
+                  color={SECONDARY_COLOR}
                   style={{ strokeWidth: "3" }}
                 />
               </A>

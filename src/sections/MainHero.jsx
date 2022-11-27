@@ -3,7 +3,7 @@ import styled from "styled-components";
 import GitHub from "../components/icons/Github";
 import Mail from "../components/icons/Mail";
 import LinkedIn from "../components/icons/LinkedIn";
-import { A } from "../components/common";
+import { A, SECONDARY_COLOR, TERTIARY_COLOR } from "../components/common";
 import avatar from '../assets/avatar.svg';
 
 const Container = styled.div`
@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 const Span = styled.span`
-  color: #444;
+  color: ${TERTIARY_COLOR};
 `;
 
 const P = styled.p`
@@ -29,7 +29,7 @@ const H2 = styled.h2`
   margin-top: 1.2em;
   font-size: 2rem;
   line-height: 1.2;
-  color: #ddd;
+  color: ${SECONDARY_COLOR};
 `;
 
 const ContactWrapper = styled.div`
@@ -76,17 +76,17 @@ const MainHero = () => {
         <Ul>
           <Li>
             <A href="https://github.com/jc992/" target='_blank'>
-              <GitHub size="16" color="#ddd" style={{ strokeWidth: "3" }} />
+              <GitHub size="16" color={SECONDARY_COLOR} style={{ strokeWidth: "3" }} />
             </A>
           </Li>
           <Li>
             <A href="mailto:jc.992@hotmail.com" target='_blank'>
-              <Mail size="16" color="#ddd" style={{ strokeWidth: "3" }} />
+              <Mail size="16" color={SECONDARY_COLOR} style={{ strokeWidth: "3" }} />
             </A>
           </Li>
           <Li>
             <A href="https://www.linkedin.com/in/jc-tavares/" target='_blank'>
-              <LinkedIn size="16" color="#ddd" style={{ strokeWidth: "3" }} />
+              <LinkedIn size="16" color={SECONDARY_COLOR} style={{ strokeWidth: "3" }} />
             </A>
           </Li>
         </Ul>
