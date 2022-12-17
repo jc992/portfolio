@@ -21,7 +21,9 @@ const H2 = styled.h2`
   margin-top: 1.2em;
   font-size: 2rem;
   line-height: 1.2;
-  color: ${TERTIARY_COLOR};
+  background: ${TERTIARY_COLOR};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 export const Wrapper = styled.a`

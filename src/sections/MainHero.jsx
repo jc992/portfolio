@@ -14,7 +14,9 @@ const Container = styled.div`
 `;
 
 const Span = styled.span`
-  color: ${TERTIARY_COLOR};
+  background: ${TERTIARY_COLOR};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const P = styled.p`

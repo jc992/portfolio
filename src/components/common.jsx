@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const PRIMARY_COLOR = "#2978b5"; // replace in index.css as well for main bg
+const PRIMARY_COLOR = "#0083b0"; // replace in index.css as well for main bg
 const SECONDARY_COLOR = "#ddd";
-const TERTIARY_COLOR = "#b08a3f";
+const TERTIARY_COLOR = "linear-gradient(to right, #c43200, #b02d00)";
 const BOX_SHADOW_COLOR = "rgba(61, 61, 59, 0.4)";
 
 const A = styled.a`

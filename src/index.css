@@ -10,8 +10,7 @@ html {
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #2978b5;
-
+  background-image: linear-gradient(to right, #2978b5, #0083b0);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
