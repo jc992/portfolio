@@ -1,5 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import {
+  PRIMARY_COLOR,
+  SECONDARY_COLOR,
+  TERTIARY_COLOR,
+} from "../components/common";
 import Mail from "../components/icons/Mail";
 
 const Container = styled.div`
@@ -16,7 +21,9 @@ const H2 = styled.h2`
   margin-top: 1.2em;
   font-size: 2rem;
   line-height: 1.2;
-  color: #444;
+  background: ${TERTIARY_COLOR};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 export const Wrapper = styled.a`
@@ -24,7 +31,7 @@ export const Wrapper = styled.a`
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #ddd;
+  color: ${SECONDARY_COLOR};
   font-weight: 600;
   transition: 0.5s;
   z-index: 1;
@@ -36,8 +43,8 @@ export const Wrapper = styled.a`
     left: 0;
     width: 100%;
     height: 100%;
-    border-top: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
+    border-top: 2px solid ${SECONDARY_COLOR};
+    border-bottom: 2px solid ${SECONDARY_COLOR};
     transform: scaleY(2);
     opacity: 0;
     transition: 0.3s;
@@ -50,7 +57,7 @@ export const Wrapper = styled.a`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ddd;
+    background-color: ${SECONDARY_COLOR};
     transform: scale(0);
     opacity: 0;
     transition: 0.3s;
@@ -58,12 +65,12 @@ export const Wrapper = styled.a`
   }
 
   &:hover {
-    color: #2978b5;
+    color: ${PRIMARY_COLOR};
 
     svg {
-      stroke: #2978b5;
+      stroke: ${PRIMARY_COLOR};
     }
-    
+
     &:before {
       transform: scaleY(1);
       opacity: 1;
@@ -76,18 +83,16 @@ export const Wrapper = styled.a`
   }
 `;
 
-const Contact = () => {
-  return (
-    <Container id='contact'>
-      <H2>CONTACT</H2>
-      <Wrapper href="mailto:jc.992@hotmail.com">
-        <div style={{ display: "flex", alignItems: "center", gap: ".5em" }}>
-          <span>email me</span>{" "}
-          <Mail size="16" color="#ddd" style={{ strokeWidth: "3" }} />
-        </div>
-      </Wrapper>
-    </Container>
-  );
-};
+const Contact = () => (
+  <Container id="contact">
+    <H2>CONTACT</H2>
+    <Wrapper href="mailto:jc.992@hotmail.com">
+      <div style={{ display: "flex", alignItems: "center", gap: ".5em" }}>
+        <span>email me</span>{" "}
+        <Mail size="16" color={SECONDARY_COLOR} style={{ strokeWidth: "3" }} />
+      </div>
+    </Wrapper>
+  </Container>
+);
 
 export default Contact;

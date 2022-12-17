@@ -14,7 +14,7 @@ const Header = styled.header`
 
 const H3 = styled.h3`
   position: relative;
-  padding-bottom: .3em;
+  padding-bottom: 0.3em;
   color: #fcfcfc;
   font-size: 1.5rem;
   line-height: 1.2;
@@ -28,32 +28,30 @@ const Ul = styled.ul`
 const Li = styled.li`
   margin-left: 1.5em;
   position: relative;
-  padding-bottom: .3em;
+  padding-bottom: 0.3em;
   font-weight: 500;
   text-transform: lowercase;
 `;
 
-const Navbar = () => {
-  return (
-    <Header>
-      <H3>
-        <A href="#">ffmcgee_</A>
-      </H3>
-      <nav>
-        <Ul>
-          <Li>
-            <A href="#projects">projects</A>
-          </Li>
-          <Li>
-            <A href="#skills">skills</A>
-          </Li>
-          <Li>
-            <A href="#contact">contact</A>
-          </Li>
-        </Ul>
-      </nav>
-    </Header>
-  );
-};
+const Navbar = () => (
+  <Header>
+    <H3>
+      <A href="#">ffmcgee_</A>
+    </H3>
+    <nav>
+      <Ul>
+        <Li>
+          <A href="#projects">projects</A>
+        </Li>
+        <Li>
+          <A href="#skills">skills</A>
+        </Li>
+        <Li>
+          <A href="#contact">contact</A>
+        </Li>
+      </Ul>
+    </nav>
+  </Header>
+);
 
 export default Navbar;
