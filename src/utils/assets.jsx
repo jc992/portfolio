@@ -8,12 +8,14 @@ import spice_landing_page from "../assets/spice_landing_page.svg";
 export default [
   {
     title: "APY.Vision Web App",
-    paragraph: "DeFi data platform for tracking liquidity pool gains and impermanent loss, also providing information useful for entering and exiting liquidity pools or yield farms.",
+    paragraph:
+      "DeFi data platform for tracking liquidity pool gains and impermanent loss, also providing information useful for entering and exiting liquidity pools or yield farms.",
     image: apy_vision,
     stack: [
       "Typescript",
       "Nest.js",
       "TypeORM",
+      "PostgreSQL",
       "React.js",
       "Next.js",
       "Web3.js",
@@ -24,7 +26,8 @@ export default [
   },
   {
     title: "Olympus DAO Web App",
-    paragraph: "Front End Web App for a Decentralized Reserve Cryptocurrency known as Olympus (open source project with decentralized work methodology).",
+    paragraph:
+      "Front End Web App for a Decentralized Reserve Cryptocurrency known as Olympus (open source project with decentralized work methodology).",
     image: olympus,
     stack: [
       "Typescript",
@@ -39,30 +42,20 @@ export default [
   },
   {
     title: "Spice Finance Landing Page",
-    paragraph: "Marketing landing page for an Aggregated NFT lending liquidity protocol known as Spice Finance.",
+    paragraph:
+      "Marketing landing page for an Aggregated NFT lending liquidity protocol known as Spice Finance.",
     image: spice_landing_page,
-    stack: [
-    "Javascript",
-    "Vite",
-    "React.js",
-    "Styled-Components",
-    "Supabase",
-    ],
-    github: "https://github.com/jc992/spice-landing-page-v1",
-    link: "https://spice-landing-page-v1.vercel.app/",
-    },
+    stack: ["Javascript", "Vite", "React.js", "Styled-Components", "Supabase"],
+  },
   {
     title: "APY.Vision Landing Page",
-    paragraph: "Marketing landing page with the purpose of guiding users to the main Web App of APY.Vision.",
+    paragraph:
+      "Marketing landing page with the purpose of guiding users to the main Web App of APY.Vision.",
     image: apy_vision_landing,
-    stack: [
-     "Javascript",
-     "React.js",
-     "SASS",
-    ],
+    stack: ["Javascript", "React.js", "SASS"],
     link: "https://apy.vision/",
-   },
-   {
+  },
+  {
     title: "Ohne",
     paragraph: "E-Commerce platform for 100% organic period related products.",
     image: ohne,
@@ -70,24 +63,26 @@ export default [
       "Typescript",
       "Express.js",
       "Knex.js",
+      "PostgreSQL",
       "GraphQl",
       "Gatbsy.js",
       "React.js",
     ],
     link: "https://ohne.com/",
   },
-   {
+  {
     title: "DataTalks CDP",
-    paragraph: "Customer data platform with the purpose of segmenting customers into audiences with similar characteristics in order to achieve a more accurate and personalized communication.",
+    paragraph:
+      "Customer data platform with the purpose of segmenting customers into audiences with similar characteristics in order to achieve a more accurate and personalized communication.",
     image: data_talks,
     stack: [
-     "C#",
-     ".NET Core",
-     "HTML5",
-     "SASS",
-     "Javascript",
-     "PostgreSQL",
-     "Git",
+      "C#",
+      ".NET Core",
+      "HTML5",
+      "SASS",
+      "Javascript",
+      "PostgreSQL",
+      "Git",
     ],
-   },
+  },
 ];
